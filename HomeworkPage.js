@@ -16,8 +16,7 @@ function HomeworkPage() {
 
   const handleSubmit = async () => {
     try {
-      const res = await axios.post('https://your-backend-url/api/ask', { question });
-      setResponse(res.data);
+      const res = await axios.post('https://smartstudy-backend-vltk.onrender.com/api/ask', { question });
     } catch (error) {
       console.error('Error submitting question:', error);
     }
